@@ -1,0 +1,18 @@
+{
+  "name": "html",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "SamuraiKun <Samurai1984@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

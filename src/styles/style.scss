@@ -1,0 +1,92 @@
+@import "common/global";
+
+.grid {
+  display: grid;
+}
+
+body {
+  grid-template-areas:
+    "header header"
+    "content navbar"
+    "footer footer";
+  grid-template-columns: 985px 315px;
+  grid-gap: 13px 20px;
+  width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  // background-color: #f5f5f5;
+  background: url("../img/scale_1200.webp");
+  background-size: cover;
+}
+
+.content {
+  grid-area: content;
+  background: rgba(244, 244, 240, 0.85);
+  border-radius: 8px;
+}
+
+.navbar {
+  grid-area: navbar;
+  background: rgba(244, 244, 240, 0.85);
+  border-radius: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  background: rgba(244, 244, 240, 0.85);
+  border-radius: 8px;
+}
+
+.header {
+  grid-area: header;
+  width: 1320px;
+  height: 119px;
+  left: 60px;
+  top: 43px;
+  background: url("../img/lento4ka.jpg");
+  background-size: contain;
+  grid-template-columns: 125px 1fr 94px;
+  grid-column-end: 3;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo1 {
+  width: 125px;
+  height: 119px;
+  background: url("../img/orden.png");
+  background-size: contain;
+}
+
+.logo2 {
+  width: 94px;
+  height: 119px;
+  background: url("../img/gerb.png");
+  background-size: contain;
+  grid-column: end;
+}
+
+.top-menu {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 67px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.09em;
+}

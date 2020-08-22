@@ -14,11 +14,13 @@ html(lang="ru")
       link(rel="stylesheet" href="css/style.min.css")
       // @endif
 
-  body
+  body.grid
     block header
       include header
     block content
       include content
+    block navbar
+      include navbar
     block footer
       include footer
     block scripts

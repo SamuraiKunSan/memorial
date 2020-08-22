@@ -21,7 +21,7 @@ function setMode(isProduction = false) {
 }
 
 const dev = gulp.parallel(pug2html, styles, script, fonts, imageMinify, svgSprite)
-const devel = gulp.parallel(pug2htmlDev, stylesDev, scriptDev)
+const devel = gulp.parallel(pug2htmlDev, stylesDev)
 const build = gulp.series(clean, dev)
 
 module.exports.prod = gulp.series(setMode(), build)
